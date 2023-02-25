@@ -1,10 +1,10 @@
-FROM lsiobase/ubuntu:bionic
-MAINTAINER Ryan Flagler
+FROM lsiobase/ubuntu:jammy
+MAINTAINER Brad Ganley
 
 # global environment settings
 ENV DEBIAN_FRONTEND="noninteractive"
 ENV COMPANY_NAME="digitalwatchdog"
-ENV SOFTWARE_URL="https://updates.networkoptix.com/digitalwatchdog/32842/linux/dwspectrum-server-4.2.0.32842-linux64.deb"
+ENV SOFTWARE_URL="https://updates.networkoptix.com/digitalwatchdog/36183/linux/dwspectrum-server-5.0.0.36183-linux_x64.deb"
 
 # pull installer
 RUN     mkdir -p /opt/deb && \
